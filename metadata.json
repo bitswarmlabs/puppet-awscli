@@ -1,16 +1,15 @@
 {
-  "name": "jdowning/awscli",
-  "version": "1.3.0",
-  "source": "https://github.com/justindowning/puppet-awscli",
-  "author": "Justin Downing",
+  "name": "bitswarmlabs/awscli",
+  "version": "1.4.0",
+  "author": "bitswarmlabs",
   "license": "Apache-2.0",
   "summary": "Install awscli",
   "description": "Install awscli",
-  "project_page": "https://github.com/justindowning/puppet-awscli",
-  "source": "https://github.com/justindowning/puppet-awscli.git",
-  "issues_url": "https://github.com/justindowning/puppet-awscli/issues",
+  "project_page": "https://github.com/bitswarmlabs/puppet-awscli",
+  "source": "https://github.com/bitswarmlabs/puppet-awscli.git",
+  "issues_url": "https://github.com/bitswarmlabs/puppet-awscli/issues",
   "dependencies": [
-    { "name": "stahnma/epel",  "version_requirement": ">= 1.0.0 <2.0.0" },
+    { "name": "stankevich/python",  "version_requirement": ">= 1.12.0 <2.0.0" },
     { "name": "puppetlabs/stdlib",  "version_requirement": ">= 4.0.0 <5.0.0" },
     { "name": "puppetlabs/concat",  "version_requirement": ">= 1.0.0 <3.0.0" }
   ],

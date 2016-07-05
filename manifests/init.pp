@@ -41,16 +41,11 @@
 #
 class awscli (
   $version          = 'present',
-  $pkg_dev          = $awscli::params::pkg_dev,
-  $pkg_pip          = $awscli::params::pkg_pip,
-  $install_pkgdeps  = true,
-  $install_pip      = true,
 ) inherits awscli::params {
-  include awscli::deps
+  include ::python
 
-  package { 'awscli':
+  ::python::pip { 'awscli':
     ensure   => $version,
-    provider => 'pip',
     require  => [
       Package['python-pip'],  
       Class['awscli::deps'],
